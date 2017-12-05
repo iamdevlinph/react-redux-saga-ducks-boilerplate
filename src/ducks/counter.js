@@ -3,10 +3,10 @@
  */
 
 export const types = {
-  ADD_REQUEST: 'COUNTER/ADD_REQUEST',
-  ADD_SUCCESS: 'COUNTER/ADD_SUCCESS',
-  MINUS_REQUEST: 'COUNTER/MINUS_REQUEST',
-  MINUS_SUCCESS: 'COUTER/MINUS_SUCCESS',
+  INCREASE_REQUEST: 'COUNTER/INCREASE_REQUEST',
+  INCREASE_SUCCESS: 'COUNTER/INCREASE_SUCCESS',
+  DECREASE_REQUEST: 'COUNTER/DECREASE_REQUEST',
+  DECREASE_SUCCESS: 'COUTER/DECREASE_SUCCESS',
 };
 
 export const initialState = {
@@ -15,16 +15,16 @@ export const initialState = {
 
 export default (state = initialState, action) => {
   switch (action.type) {
-    case types.ADD_SUCCESS:
-      return { ...state, total: state.total + action.payload };
-    case types.MINUS_SUCCESS:
-      return { ...state, total: state.total - action.payload };
+    case types.INCREASE_SUCCESS:
+      return { ...state, total: state.total + 1 };
+    case types.DECREASE_SUCCESS:
+      return { ...state, total: state.total - 1 };
     default:
       return state;
   }
 };
 
 export const actions = {
-  add: toAdd => ({ type: types.ADD_REQUEST, toAdd }),
-  minus: toMinus => ({ type: types.MINUS_REQUEST, toMinus }),
+  counterIncrease: () => ({ type: types.INCREASE_REQUEST }),
+  counterDecrease: () => ({ type: types.DECREASE_REQUEST }),
 };

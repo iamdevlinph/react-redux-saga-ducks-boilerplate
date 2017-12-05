@@ -2,21 +2,19 @@ import { put, takeLatest } from 'redux-saga/effects';
 
 import { types as counterTypes } from '../ducks/counter';
 
-function* addRequest(action) {
+function* willIncrease() {
   yield put({
-    type: counterTypes.ADD_SUCCESS,
-    payload: action.toAadd,
+    type: counterTypes.INCREASE_SUCCESS,
   });
 }
 
-function* minusRequest(action) {
+function* willDecrease() {
   yield put({
-    type: counterTypes.MINUS_SUCCESS,
-    payload: action.toMinus,
+    type: counterTypes.DECREASE_SUCCESS,
   });
 }
 
 export default function* mySaga() {
-  yield takeLatest(counterTypes.ADD_REQUEST, addRequest);
-  yield takeLatest(counterTypes.MINUS_REQUEST, minusRequest);
+  yield takeLatest(counterTypes.INCREASE_REQUEST, willIncrease);
+  yield takeLatest(counterTypes.DECREASE_REQUEST, willDecrease);
 }

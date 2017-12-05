@@ -10,6 +10,7 @@ A react, redux, redux-saga, ducks pattern boilerplate. [Demo](https://iamdevlinp
 * SCSS
 * Webpack v3
 * [node-sass-chokidar](https://www.npmjs.com/package/node-sass-chokidar) (add support for sass in create-react-app)
+* ES Lint
 
 # Development
 1. Make sure you have [Node.js](https://nodejs.org/en/) installed
