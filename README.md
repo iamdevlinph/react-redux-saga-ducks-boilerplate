@@ -1,5 +1,5 @@
 # React-Redux-Saga-Ducks Boilerplate
-A react, redux, redux-saga, ducks module boilerplate
+A react, redux, redux-saga, ducks pattern boilerplate
 
 # Development
 1. Make sure you have [Node.js](https://nodejs.org/en/) installed
@@ -53,6 +53,11 @@ The `.css` files are ignored in git. But if you want to hide them from your VS C
 * React Router v4
 * [Animate.css](https://daneden.github.io/animate.css/) (not via npm)
 * [node-sass-chokidar](https://www.npmjs.com/package/node-sass-chokidar) (add support for sass in create-react-app)
+
+# Milestones
+- [ ] Integrate code splitting using [React Loadable](https://github.com/thejameskyle/react-loadable)
+- [ ] Integrate selector library using [Reselect](https://github.com/reactjs/reselect)
+- [ ] Integrate google-like class naming using [styled components](https://github.com/styled-components/styled-components)
 
 ---
 

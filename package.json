@@ -1,7 +1,7 @@
 {
   "name": "react-redux-saga-ducks-boilerplate",
   "version": "1.0.0",
-  "description": "A react, redux, redux-saga, ducks module boilerplate",
+  "description": "A react, redux, redux-saga, ducks pattern boilerplate",
   "dependencies": {
     "gh-pages": "^1.0.0",
     "node-sass-chokidar": "0.0.3",
