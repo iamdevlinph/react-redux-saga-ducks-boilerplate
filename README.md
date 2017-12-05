@@ -3,7 +3,7 @@ A react, redux, redux-saga, ducks module boilerplate
 
 # Development
 1. Make sure you have [Node.js](https://nodejs.org/en/) installed
-2. Verify by running `node -v` and `npm -v`
+2. Verify by running `node -v` and `npm -v` (at the time of writing: v6.11.0 and v3.10.10, respectively)
 3. Clone the repo sitory
 ```ssh
 git clone git@github.com:iamdevlinph/react-redux-saga-ducks-boilerplate.git
@@ -45,12 +45,12 @@ The `.css` files are ignored in git. But if you want to hide them from your VS C
 },
 ```
 
-# Libraries Used
+# Dependencies
 
-### Core
-* React
+* React v16
 * Redux
 * Redux-Saga
+* React Router v4
 * [Animate.css](https://daneden.github.io/animate.css/) (not via npm)
 * [node-sass-chokidar](https://www.npmjs.com/package/node-sass-chokidar) (add support for sass in create-react-app)
 
