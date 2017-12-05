@@ -1,5 +1,15 @@
 # React-Redux-Saga-Ducks Boilerplate
-A react, redux, redux-saga, ducks pattern boilerplate
+A react, redux, redux-saga, ducks pattern boilerplate. [Demo](https://iamdevlinph.github.io/react-redux-saga-ducks-boilerplate/)
+
+# Includes
+* React v16
+* Redux
+* Redux-Saga
+* React Router v4
+* [Ducks pattern](https://github.com/erikras/ducks-modular-redux)
+* SCSS
+* Webpack v3
+* [node-sass-chokidar](https://www.npmjs.com/package/node-sass-chokidar) (add support for sass in create-react-app)
 
 # Development
 1. Make sure you have [Node.js](https://nodejs.org/en/) installed
@@ -45,20 +55,11 @@ The `.css` files are ignored in git. But if you want to hide them from your VS C
 },
 ```
 
-# Dependencies
-
-* React v16
-* Redux
-* Redux-Saga
-* React Router v4
-* [Animate.css](https://daneden.github.io/animate.css/) (not via npm)
-* [node-sass-chokidar](https://www.npmjs.com/package/node-sass-chokidar) (add support for sass in create-react-app)
-
 # Milestones
 - [ ] Integrate code splitting using [React Loadable](https://github.com/thejameskyle/react-loadable)
 - [ ] Integrate selector library using [Reselect](https://github.com/reactjs/reselect)
 - [ ] Integrate google-like class naming using [styled components](https://github.com/styled-components/styled-components)
-
+- [ ] Integrate tests
 ---
 
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
