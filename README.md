@@ -1,5 +1,5 @@
 # React-Redux-Saga-Ducks Boilerplate
-A react, redux, redux-saga, ducks pattern boilerplate. [Demo](https://iamdevlinph.github.io/react-redux-saga-ducks-boilerplate/)
+A react, redux, redux-saga, ducks pattern boilerplate. To be used as a starter kit for future projects. [Demo](https://iamdevlinph.github.io/react-redux-saga-ducks-boilerplate/).
 
 # Includes
 * React v16
@@ -26,9 +26,10 @@ git clone git@github.com:iamdevlinph/react-redux-saga-ducks-boilerplate.git
 
 # Deployment
 This deployment is only for gh-pages in order to have a live preview of the app
-1. Run `npm start deploy`
-2. Open the app using this [link](https://iamdevlinph.github.io/react-redux-saga-ducks-boilerplate/)
-3. You may need to do a hard refresh `Shift + F5` in order for changes to reflect
+1. Edit the `homepage` property in `package.json` into `https://<username>.github.io/<repository>/`
+2. Run `npm start deploy`
+3. Open the app using the link in step 1 `https://<username>.github.io/<repository>/`
+4. You may need to do a hard refresh `Shift + F5` in order for changes to reflect
 
 This will deploy the build files to the branch `gh-pages` in which Github uses to serve the app. [Read more about github pages](https://pages.github.com/)
 
@@ -78,6 +79,8 @@ The `.css` files are ignored in git. But if you want to hide them from your VS C
 - [ ] Integrate selector library using [Reselect](https://github.com/reactjs/reselect)
 - [ ] Integrate google-like class naming using [styled components](https://github.com/styled-components/styled-components)
 - [ ] Integrate tests
+- [ ] Integrate material design
+- [ ] Implement proper eslinting
 ---
 
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
