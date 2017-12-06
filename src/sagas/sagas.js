@@ -1,24 +1,9 @@
-import { put, takeLatest } from 'redux-saga/effects';
+import { all } from 'redux-saga/effects';
 
-import { types as counterTypes } from '../ducks/counter';
-
-function* willIncrease(action) {
-  const val = (action && action.val) ? action.val : null;
-  yield put({
-    type: counterTypes.INCREASE_SUCCESS,
-    val,
-  });
-}
-
-function* willDecrease(action) {
-  const val = (action && action.val) ? action.val : null;
-  yield put({
-    type: counterTypes.DECREASE_SUCCESS,
-    val,
-  });
-}
+import counterSagas from './counterSagas';
 
 export default function* mySaga() {
-  yield takeLatest(counterTypes.INCREASE_REQUEST, willIncrease);
-  yield takeLatest(counterTypes.DECREASE_REQUEST, willDecrease);
+  yield all([
+    ...counterSagas,
+  ]);
 }

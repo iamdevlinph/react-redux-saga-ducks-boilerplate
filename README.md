@@ -34,7 +34,24 @@ This will deploy the build files to the branch `gh-pages` in which Github uses t
 
 # Folder Structure
 ```
-
+app/
+  .vscode/
+  public/
+    favi.ico
+    index.html
+  src/
+    components/
+    containers/
+    ducks/
+    routes/
+    sagas/
+    services/
+    styles/
+  .eslintignore
+  .eslintrc.js
+  .gitignore
+  package.json
+  README.md
 ```
 Read more about each directory in each directory's `README.md`
 
