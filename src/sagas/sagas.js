@@ -2,15 +2,19 @@ import { put, takeLatest } from 'redux-saga/effects';
 
 import { types as counterTypes } from '../ducks/counter';
 
-function* willIncrease() {
+function* willIncrease(action) {
+  const val = (action && action.val) ? action.val : null;
   yield put({
     type: counterTypes.INCREASE_SUCCESS,
+    val,
   });
 }
 
-function* willDecrease() {
+function* willDecrease(action) {
+  const val = (action && action.val) ? action.val : null;
   yield put({
     type: counterTypes.DECREASE_SUCCESS,
+    val,
   });
 }
 
